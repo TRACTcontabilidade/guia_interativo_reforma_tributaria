@@ -30,7 +30,6 @@
         h1, h2, h3, h4, .font-serif-brand { font-family: 'Lora', Georgia, serif; }
         .font-logo { font-family: 'Playfair Display', Georgia, serif; }
 
-        /* Estilização dos Cards */
         .gamma-card {
             background-color: var(--bg-card);
             border: 1px solid var(--border-color);
@@ -42,7 +41,6 @@
             border-color: var(--accent-blue);
         }
 
-        /* 1. Animações de Entrada (Scroll Reveal) */
         .reveal-up {
             opacity: 0;
             transform: translateY(30px);
@@ -53,13 +51,11 @@
             transform: translateY(0);
         }
 
-        /* 2. Animação Barras de Progresso B2B/B2C */
         .progress-bar-fill {
             width: 0%;
             transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
-        /* FAQ Sanfona */
         details > summary { list-style: none; cursor: pointer; }
         details > summary::-webkit-details-marker { display: none; }
         details[open] summary ~ * { animation: sweep .5s ease-in-out; }
@@ -68,13 +64,11 @@
             100%  {opacity: 1; transform: translateY(0)}
         }
 
-        /* Scrollbar */
         .custom-scrollbar::-webkit-scrollbar { width: 8px; }
         .custom-scrollbar::-webkit-scrollbar-track { background: var(--bg-main); }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: var(--accent-blue); }
 
-        /* E-book 3D Effect */
         .book-image-container { perspective: 1000px; }
         .book-image {
             transform: rotateY(-5deg);
@@ -101,7 +95,6 @@
                 <span class="text-slate-300 font-light text-[10px] sm:text-xs tracking-widest uppercase border-l border-slate-600 pl-2 sm:pl-3 ml-1 mt-1">Contabilidade</span>
             </a>
             
-            <!-- Menu Desktop -->
             <div class="hidden lg:flex gap-4 xl:gap-6 items-center ml-auto pl-4">
                 <a href="#iva" class="text-xs xl:text-sm font-medium text-slate-300 hover:text-white transition-colors whitespace-nowrap">Novo IVA</a>
                 <a href="#excecoes" class="text-xs xl:text-sm font-medium text-slate-300 hover:text-white transition-colors whitespace-nowrap">Setores Blindados</a>
@@ -113,14 +106,12 @@
                 <a href="#faq" class="text-xs xl:text-sm font-medium text-slate-300 hover:text-white transition-colors whitespace-nowrap ml-4 xl:ml-8">Dúvidas Frequentes</a>
             </div>
 
-            <!-- Botão Hamburger Mobile -->
             <button id="mobile-menu-btn" class="lg:hidden text-slate-300 hover:text-white focus:outline-none p-2 ml-auto">
                 <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
         </div>
     </div>
     
-    <!-- Menu Mobile Dropdown -->
     <div id="mobile-menu" class="hidden lg:hidden bg-[#242A35] border-b border-[#333C4A] px-4 py-4 space-y-3 shadow-xl">
         <a href="#iva" class="mobile-link block text-base font-medium text-slate-300 hover:text-white">Novo IVA</a>
         <a href="#excecoes" class="mobile-link block text-base font-medium text-slate-300 hover:text-white">Setores Blindados</a>
@@ -153,7 +144,6 @@
             </a>
         </div>
 
-        <!-- 6. Depoimento / Prova Social -->
         <div class="max-w-2xl mx-auto bg-gradient-to-r from-[#242A35]/50 to-[#1B2028] p-6 rounded-2xl border border-[#333C4A]/50 relative">
             <div class="absolute -top-4 -left-2 text-4xl text-blue-500/30 font-serif">"</div>
             <p class="text-sm md:text-base text-slate-300 italic text-center px-4">"A reforma não é só contabilidade, é sobrevivência de mercado. A TRACT não apura apenas minhas guias, eles constroem o plano de defesa da minha margem de lucro líquida."</p>
@@ -218,7 +208,7 @@
             <div class="p-8 gamma-card rounded-3xl border-t-4 border-emerald-500 flex flex-col">
                 <div class="text-emerald-400 text-4xl font-black mb-4">0%</div>
                 <h4 class="text-xl font-bold mb-3 text-white">Alíquota Zero</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">Itens da Cesta Básica Nacional de Alimentos, medicamentos classificados como essenciais, e insumos vitais para o agronegócio.</p>
+                <p class="text-slate-400 text-sm leading-relaxed">Itens da Cesta Básica Nacional de Alimentos, medicamentos classificados essentialis, e insumos vitais para o agronegócio.</p>
             </div>
             
             <div class="p-8 gamma-card rounded-3xl border-t-4 border-blue-400 flex flex-col">
@@ -286,7 +276,6 @@
         <div class="max-w-3xl mx-auto px-4">
             <div class="relative border-l-2 border-blue-900/50 ml-4 md:ml-0 md:pl-0 space-y-12">
                 
-                <!-- 2026 -->
                 <div class="relative pl-8 md:pl-12 reveal-up">
                     <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-blue-500 border-4 border-[#1B2028] shadow-[0_0_10px_rgba(59,130,246,0.8)]"></div>
                     <div class="text-blue-500 font-black text-2xl mb-1">2026</div>
@@ -296,7 +285,6 @@
                     </p>
                 </div>
 
-                <!-- 2027 -->
                 <div class="relative pl-8 md:pl-12 reveal-up">
                     <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-slate-400 border-4 border-[#1B2028]"></div>
                     <div class="text-slate-300 font-black text-2xl mb-1">2027</div>
@@ -306,7 +294,6 @@
                     </p>
                 </div>
 
-                <!-- 2029 -->
                 <div class="relative pl-8 md:pl-12 reveal-up">
                     <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-slate-500 border-4 border-[#1B2028]"></div>
                     <div class="text-slate-400 font-black text-2xl mb-1">2029</div>
@@ -316,7 +303,6 @@
                     </p>
                 </div>
 
-                <!-- 2033 -->
                 <div class="relative pl-8 md:pl-12 reveal-up">
                     <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-slate-600 border-4 border-[#1B2028]"></div>
                     <div class="text-slate-500 font-black text-2xl mb-1">2033</div>
@@ -361,7 +347,6 @@
                         <h4 class="font-bold text-white mb-6 text-center text-sm md:text-base">Crédito Repassado ao seu Cliente B2B</h4>
                         
                         <div class="space-y-8">
-                            <!-- 2. Barra Animada B2C -->
                             <div>
                                 <div class="flex justify-between text-xs md:text-sm mb-2">
                                     <span class="text-slate-300">Via DAS Unificado</span>
@@ -372,7 +357,6 @@
                                 </div>
                             </div>
                             
-                            <!-- 2. Barra Animada B2B -->
                             <div>
                                 <div class="flex justify-between text-xs md:text-sm mb-2">
                                     <span class="text-slate-300">Via Regime Híbrido</span>
@@ -390,7 +374,6 @@
             </div>
         </div>
 
-        <!-- 8. Simulador de Impacto (Isca de Leads) -->
         <div id="simulador" class="max-w-2xl mx-auto bg-[#242A35] rounded-2xl border border-[#333C4A] p-6 md:p-8 shadow-xl reveal-up">
             <h3 class="text-lg font-bold text-white mb-2 text-center">Simulador de Risco B2B</h3>
             <p class="text-xs text-slate-400 text-center mb-6">Descubra se sua margem está em perigo.</p>
@@ -417,7 +400,6 @@
                 </button>
             </div>
 
-            <!-- Resultado -->
             <div id="calc-result" class="hidden mt-6 p-4 rounded-lg border text-sm"></div>
         </div>
     </section>
@@ -449,7 +431,10 @@
                     <div class="absolute -right-20 -top-20 w-40 h-40 bg-blue-600/20 rounded-full blur-3xl"></div>
                     
                     <h3 class="text-2xl font-serif-brand font-bold text-white mb-2 relative z-10">Baixe o seu exemplar.</h3>
-                    <p class="text-sm text-slate-400 mb-8 relative z-10">Preencha os dados abaixo para enviar a solicitação ao nosso WhatsApp.</p>
+                    <p class="text-sm text-slate-400 mb-8 relative z-10">Preencha os dados abaixo para receber o conteúdo no e-mail.</p>
+
+                    <!-- Feedback de Envio -->
+                    <div id="formFeedback" class="hidden p-4 mb-4 rounded-xl text-xs font-semibold border text-center relative z-10"></div>
 
                     <form id="leadForm" class="flex flex-col gap-5 relative z-10">
                         <div>
@@ -497,13 +482,13 @@
                             </select>
                         </div>
 
-                        <button type="submit" class="mt-4 w-full bg-[#25D366] hover:bg-[#1fb355] text-white font-bold py-4 px-6 rounded-xl transition-all transform hover:-translate-y-1 shadow-[0_4px_15px_rgba(37,211,102,0.2)] hover:shadow-[0_10px_20px_rgba(37,211,102,0.3)] flex justify-center items-center gap-3">
-                            <i class="fab fa-whatsapp text-xl"></i>
-                            <span>Receber E-book no WhatsApp</span>
+                        <button type="submit" class="mt-4 w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-6 rounded-xl transition-all transform hover:-translate-y-1 shadow-[0_4px_15px_rgba(59,130,246,0.3)] hover:shadow-[0_10px_20px_rgba(59,130,246,0.4)] flex justify-center items-center gap-3">
+                            <i class="fas fa-paper-plane text-xl"></i>
+                            <span>Receber E-book no E-mail</span>
                         </button>
                         
                         <p class="text-[10px] text-center text-slate-500 mt-2">
-                            <i class="fas fa-lock mr-1"></i> Seus dados estão seguros. Não enviamos spam.
+                            <i class="fas fa-lock mr-1"></i> Seus dados estão seguros e criptografados.
                         </p>
                     </form>
                 </div>
@@ -561,7 +546,6 @@
             
             <div class="mb-10 flex flex-col items-center">
                 <div class="p-4 bg-white rounded-2xl shadow-[0_0_30px_rgba(59,130,246,0.15)] border-4 border-[#333C4A] hover:border-blue-500 transition-colors cursor-pointer group">
-                    <!-- 4. QR Code Apontando para o WhatsApp -->
                     <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://wa.me/5571985499959?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20tribut%C3%A1rio.&color=0A2540" 
                          alt="QR Code WhatsApp TRACT" 
                          class="w-32 h-32 md:w-40 md:h-40 group-hover:scale-105 transition-transform">
@@ -572,7 +556,6 @@
             </div>
             
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <!-- 4. Botão Direto para o WhatsApp -->
                 <a href="https://wa.me/5571985499959?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20TRACT%20e%20gostaria%20de%20agendar%20meu%20Diagn%C3%B3stico%20Gratuito." target="_blank" class="w-full sm:w-auto bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-500 transition-all hover:-translate-y-1 shadow-[0_0_20px_rgba(59,130,246,0.3)] flex justify-center items-center gap-2">
                     Falar com Consultor Agora
                 </a>
@@ -633,21 +616,18 @@
     </div>
 </footer>
 
-<!-- Botão Flutuante 1: Diagnóstico Grátis (Empilhado) -->
 <a href="https://wa.me/5571985499959?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20TRACT%20e%20gostaria%20de%20agendar%20meu%20Diagn%C3%B3stico%20Gratuito." target="_blank" 
    class="fixed bottom-24 right-6 bg-blue-600 hover:bg-blue-500 text-white px-4 py-2.5 rounded-2xl font-bold text-xs shadow-[0_4px_20px_rgba(59,130,246,0.4)] hover:scale-105 transition-transform z-50 flex flex-col items-center justify-center text-center leading-snug group border border-blue-500/50">
     <span>Diagnóstico</span>
     <span>Grátis</span>
 </a>
 
-<!-- Botão Flutuante 2: WhatsApp -->
 <a href="https://wa.me/5571985499959?text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20com%20a%20Reforma%20Tribut%C3%A1ria." target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center shadow-[0_4px_20px_rgba(34,197,94,0.4)] hover:scale-110 transition-transform z-50 group">
     <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     <span class="absolute -top-10 bg-slate-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Chamar no WhatsApp</span>
 </a>
 
 <script>
-    // 3. Lógica do Menu Mobile
     const btn = document.getElementById('mobile-menu-btn');
     const menu = document.getElementById('mobile-menu');
     const links = document.querySelectorAll('.mobile-link');
@@ -662,7 +642,6 @@
         });
     });
 
-    // 1. Scroll Reveal Logic & 2. Animação Barras B2B
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -672,18 +651,14 @@
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Anima seções e cards
                 entry.target.classList.add('active');
                 
-                // Anima Barras de Progresso B2B/B2C se for o container delas
                 if(entry.target.id === 'b2b-chart-container') {
                     const bars = entry.target.querySelectorAll('.progress-bar-fill');
                     bars.forEach(bar => {
                         bar.style.width = bar.getAttribute('data-width');
                     });
                 }
-                
-                // Desativa a observação após animar
                 observer.unobserve(entry.target);
             }
         });
@@ -693,7 +668,6 @@
         observer.observe(el);
     });
 
-    // Gráfico de Pizza (O Novo IVA)
     window.addEventListener('DOMContentLoaded', () => {
         const canvas = document.getElementById('ivaChart');
         if(canvas) {
@@ -747,7 +721,6 @@
         }
     });
 
-    // 8. Calculadora Básica de Impacto (Lead Magnet)
     function calcularImpacto() {
         const regime = document.getElementById('calc-regime').value;
         const cliente = document.getElementById('calc-cliente').value;
@@ -767,7 +740,6 @@
         }
     }
 
-    // 9. Lógica do Formulário do E-book (WhatsApp + E-mail via FormSubmit)
     const whatsInput = document.getElementById('leadWhats');
     if(whatsInput) {
         whatsInput.addEventListener('input', function (e) {
@@ -788,51 +760,66 @@
             const publico = document.getElementById('leadPublico').value;
 
             const btn = e.target.querySelector('button[type="submit"]');
+            const feedback = document.getElementById('formFeedback');
             const conteudoOriginal = btn.innerHTML;
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin text-xl"></i> <span>Processando...</span>';
-
-            // 1. Enviar os dados via E-mail (FormSubmit AJAX)
-            const targetEmail = "adrianobigfilmes@gmail.com"; // E-mail de destino
             
-            fetch(`https://formsubmit.co/ajax/${targetEmail}`, {
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin text-xl"></i> <span>Enviando...</span>';
+            feedback.className = "hidden";
+
+            // ⚠️ Motor conectado! O formulário agora envia para o Render seguro
+            const backendURL = "https://motor-tract.onrender.com/api/subscribe";
+            
+            fetch(backendURL, {
                 method: "POST",
                 headers: { 
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'
                 },
                 body: JSON.stringify({
-                    Nome: nome,
-                    Email: email,
-                    WhatsApp: telefone,
-                    Regime: regime,
-                    Publico: publico,
-                    _subject: "✨ NOVO LEAD - E-book Reforma Tributária"
+                    nome: nome,
+                    email: email,
+                    whatsapp: telefone,
+                    regime: regime,
+                    publico: publico
                 })
             })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) throw new Error("Erro na integração com o servidor.");
+                return response.json();
+            })
             .then(data => {
-                abrirWhatsApp();
+                feedback.textContent = "Sucesso! Material enviado para o seu e-mail.";
+                feedback.className = "p-4 mb-4 rounded-xl text-xs font-semibold border text-center bg-emerald-500/10 text-emerald-400 border-emerald-500/30";
+                
+                setTimeout(() => {
+                    abrirWhatsApp();
+                }, 1500);
             })
             .catch(error => {
-                // Mesmo que a rede falhe, o cliente não fica preso e é enviado ao Zap
-                console.error("Erro ao enviar e-mail:", error);
-                abrirWhatsApp();
+                console.error("Erro no cadastro:", error);
+                feedback.textContent = "Estamos redirecionando você para o WhatsApp...";
+                feedback.className = "p-4 mb-4 rounded-xl text-xs font-semibold border text-center bg-amber-500/10 text-amber-400 border-amber-500/30";
+                
+                // Redireciona mesmo se o servidor falhar para não perder a venda
+                setTimeout(() => {
+                    abrirWhatsApp();
+                }, 1500);
             });
 
-            // 2. Redirecionar para o WhatsApp apenas com a mensagem curta
             function abrirWhatsApp() {
                 const numeroTract = "5571985499959";
-                const mensagem = `Olá, vim do Guia Interativo e gostaria de receber o e-book "Sobrevivendo à Reforma Tributária"!`;
+                const mensagem = `Olá, preenchi os dados no Guia Interativo! Meu nome é ${nome}, sou do regime ${regime} e gostaria de receber o e-book "Sobrevivendo à Reforma Tributária".`;
                 const msgCodificada = encodeURIComponent(mensagem);
                 const urlWhatsApp = `https://wa.me/${numeroTract}?text=${msgCodificada}`;
 
-                // Redirecionamento
                 window.location.href = urlWhatsApp;
                 
                 setTimeout(() => {
+                    btn.disabled = false;
                     btn.innerHTML = conteudoOriginal;
-                    e.target.reset(); // Limpa o formulário
-                }, 1000);
+                    leadForm.reset(); 
+                }, 1500);
             }
         });
     }
